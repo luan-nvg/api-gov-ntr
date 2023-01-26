@@ -4,6 +4,14 @@ const router = express.Router();
 const axios = require('axios');
 // const app = express();
 // const {createProxyMiddleware}  = require('http-proxy-middleware'); 
+
+router.get('/', function (req, res, next) {
+    res.status(200).send({
+        title: "Pessoa Express API",
+        version: "0.0.1"
+    });
+});
+
 router.post('/', async function (req, res, next) {
     const data = req.body
     const headers = req.headers
