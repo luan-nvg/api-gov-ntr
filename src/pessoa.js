@@ -8,7 +8,7 @@ const axios = require('axios');
 router.get('/', function (req, res, next) {
     res.status(200).send({
         title: "Pessoa Express API",
-        version: "0.0.1"
+        version: "0.0.2"
     });
 });
 
